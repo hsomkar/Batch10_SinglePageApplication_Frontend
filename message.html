@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Single Page Application</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <h1 class="text-center">Welcome to Single Page Application</h1>
+
+    <div
+      class="d-flex justify-content-center align-items-center w-100"
+      style="margin-top: 150px"
+    >
+      <div
+        class="toast hide"
+        data-delay="2500"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+        data-animation="true"
+        data-tor-fx="show:scale.from(75)"
+      >
+        <div class="toast-header">
+          <strong class="mr-auto text-primary">Sucessfully loged in</strong>
+          <button
+            type="button"
+            class="ml-2 mb-1 close"
+            data-dismiss="toast"
+            aria-label="Close"
+          >
+            &times;
+          </button>
+        </div>
+        <div class="toast-body">
+          Welcome
+          <script>
+            `${userName}`;
+          </script>
+        </div>
+      </div>
+    </div>
+    <script src="validate.js"></script>
+  </body>
+</html>
